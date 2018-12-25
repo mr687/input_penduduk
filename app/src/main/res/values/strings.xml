@@ -1,0 +1,255 @@
+<resources>
+    <string name="app_name">Penduduk</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="status_penguasaan_bangunan">
+        <item>Milik Sendiri</item>
+        <item>Kontrak/sewa</item>
+        <item>Bebas Sewa</item>
+        <item>Dinas</item>
+        <item>Lainnya</item>
+    </string-array>
+    <string-array name="status_lahan">
+        <item>Milik Sendiri</item>
+        <item>Milik Orang Lain</item>
+        <item>Tanah Negara</item>
+        <item>Lainnya</item>
+    </string-array>
+    <string-array name="jenis_lantai_terluas">
+        <item>Marmer/Granit</item>
+        <item>Keramik</item>
+        <item>Parket/Vinil/Permadani</item>
+        <item>Ubin/Tegel/Teraso</item>
+        <item>Kayu/Papan Kualitas Tinggi</item>
+        <item>Semen/Bata Merah</item>
+        <item>Bambu</item>
+        <item>Kayu/Papan Kualitas Rendah</item>
+        <item>Tanah</item>
+        <item>Lainnya</item>
+    </string-array>
+    <string-array name="jenis_dinding_terluas">
+        <item>Tembok</item>
+        <item>Plesteran Anyaman Bambu/Kawat</item>
+        <item>Kayu</item>
+        <item>Anyaman Bambu</item>
+        <item>Batang Kayu</item>
+        <item>Bambu</item>
+        <item>Lainnya</item>
+    </string-array>
+    <string-array name="kualitas_dinding">
+        <item>Bagus/Kualitas Tinggi</item>
+        <item>Jelek/Kualitas Rendah</item>
+    </string-array>
+    <string-array name="jenis_atap_terluas">
+        <item>Beton/Genteng Beton</item>
+        <item>Genteng Keramik</item>
+        <item>Genteng Metal</item>
+        <item>Genteng Tanah Liat</item>
+        <item>Asbes</item>
+        <item>Seng</item>
+        <item>Sirap</item>
+        <item>Bambu</item>
+        <item>Jerami/Ijuk/Daun-Daunan/Rumbia</item>
+        <item>Lainnya</item>
+    </string-array>
+    <string-array name="sumber_air_minum">
+        <item>Air Kemasan Bermerk</item>
+        <item>Air Isi Ulang</item>
+        <item>Leding Meteran</item>
+        <item>Leding Eceran</item>
+        <item>Sumur Bor/Pompa</item>
+        <item>Sumur Terlindung</item>
+        <item>Sumur Tak Terlindung</item>
+        <item>Mata Air Terlindung</item>
+        <item>Mata Air Tak Terlindung</item>
+        <item>Air Sungai/Danau/Waduk</item>
+        <item>Air Hujan</item>
+        <item>Lainnya</item>
+    </string-array>
+    <string-array name="cara_memperoleh_air_minum">
+        <item>Membeli Eceran</item>
+        <item>Langganan</item>
+        <item>Tidak Membeli</item>
+    </string-array>
+    <string-array name="sumber_penerangan_utama">
+        <item>Listrik PLN</item>
+        <item>Listrik Non PLN</item>
+        <item>Bukan Listrik</item>
+    </string-array>
+    <string-array name="daya_terpasang">
+        <item>450 Watt</item>
+        <item>900 Watt</item>
+        <item>1.300 Watt</item>
+        <item>2.200 Watt</item>
+        <item>&gt; 2.200 Watt</item>
+        <item>Tanpa Meteran</item>
+    </string-array>
+    <string-array name="bahan_bakar_memasak">
+        <item>Listrik</item>
+        <item>Gas &gt; 3 kg</item>
+        <item>Gas 3 kg</item>
+        <item>Gas Kota/Biogas</item>
+        <item>Minyak Tanah</item>
+        <item>Briket</item>
+        <item>Arang</item>
+        <item>Kayu Bakar</item>
+        <item>Tidak Memasak Dirumah</item>
+    </string-array>
+    <string-array name="tempat_bab">
+        <item>Sendiri</item>
+        <item>Bersama</item>
+        <item>Umum</item>
+        <item>Tidak Ada</item>
+    </string-array>
+    <string-array name="jenis_kloset">
+        <item>Leher Angsa</item>
+        <item>Plengsengan</item>
+        <item>Cemplung/Cupluk</item>
+        <item>Tidak Pakai</item>
+    </string-array>
+    <string-array name="tempat_pembuangan_akhir_tinja">
+        <item>Tangki</item>
+        <item>SPAL</item>
+        <item>Lubang Tanah</item>
+        <item>Kolam/Sawah/Sungai/Danau/Laut</item>
+        <item>Pantai/Tanah Lapang/Kebun</item>
+        <item>Lainnya</item>
+    </string-array>
+    <string-array name="hubungan_dengan_krt">
+        <item>Kepala Rumah Tangga</item>
+        <item>Istri/Suami</item>
+        <item>Anak</item>
+        <item>Menantu</item>
+        <item>Cucu</item>
+        <item>Orang Tua/Mertua</item>
+        <item>Pembantu Ruta</item>
+        <item>Lainnya</item>
+    </string-array>
+    <string-array name="status_perkawinan">
+        <item>Belum Kawin</item>
+        <item>Kawin/Nikah</item>
+        <item>Cerai Hidup</item>
+        <item>Cerai Mati</item>
+    </string-array>
+    <string-array name="kepemilikan_akta_nikah">
+        <item>Tidak</item>
+        <item>Ya, Dapat Ditunjukkan</item>
+        <item>Ya, Tidak Dapat Ditunjukkan</item>
+    </string-array>
+    <string-array name="jenis_cacat">
+        <item>Tidak Cacat</item>
+        <item>Tuna Daksa/Cacat Tubuh</item>
+        <item>Tuna Netra/Buta</item>
+        <item>Tuna Rungu</item>
+        <item>Tuna Wicara</item>
+        <item>Tuna Rungu &amp; Wicara</item>
+        <item>Tuna Netra &amp; Cacat Tubuh</item>
+        <item>Tuna Netra, Rungu, &amp; Wicara</item>
+        <item>Tuna Rungu, Wicara, &amp; Cacat Tubuh</item>
+        <item>Tuna Rungu, Wicara, Netra, &amp; Cacat Tubuh</item>
+        <item>Cacat Mental Retardasi</item>
+        <item>Mantan Penderita Gangguan Jiwa</item>
+        <item>Cacat Fisik &amp; Mental</item>
+    </string-array>
+    <string-array name="penyakit_kronis">
+        <item>Tidak Ada</item>
+        <item>Hipertensi (Tenanan Darah Tinggi)</item>
+        <item>Rematik</item>
+        <item>Asma</item>
+        <item>Masalah Jantung</item>
+        <item>Diabetes (Kencing Manis)</item>
+        <item>Tuberculosis (TBC)</item>
+        <item>Stroke</item>
+        <item>Kanker atau Tumor Ganas</item>
+        <item>Lainnya(Gagal Ginjal, Paru-Paru Flek, dan Sejenisnya)</item>
+    </string-array>
+    <string-array name="partisipasi_sekolah">
+        <item>Tidak/Belum Pernah Sekolah</item>
+        <item>Masih Sekolah</item>
+        <item>Tidak Bersekolah Lagi</item>
+    </string-array>
+    <string-array name="jenjang_pendidikan_tertinggi">
+        <item>SD/SDLB</item>
+        <item>Paket A</item>
+        <item>M. Ibtidaiyah</item>
+        <item>SMP/SMPLB</item>
+        <item>Paket B</item>
+        <item>M. Tsanawiyah</item>
+        <item>SMA/SMK/SMALB</item>
+        <item>Paket C</item>
+        <item>M. Aliyah</item>
+        <item>Perguruan Tinggi</item>
+    </string-array>
+    <string-array name="kelas_tertinggi">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="ijazah_tertinggi">
+        <item>Tidak Punya Ijazah</item>
+        <item>SD/Sederajat</item>
+        <item>SMP/Sederajat</item>
+        <item>SMA/Sederajat</item>
+        <item>D1/D2/D3</item>
+        <item>D4/S1</item>
+        <item>S2/S3</item>
+    </string-array>
+    <string-array name="lapangan_usaha">
+        <item>Pertanian Tanaman Padi &amp; Palawija</item>
+        <item>Hortikultura</item>
+        <item>Perkebunan</item>
+        <item>Perikanan Tangkap</item>
+        <item>Perikanan Budidaya</item>
+        <item>Peternakan</item>
+        <item>Kehutanan &amp; Pertanian Lainnya</item>
+        <item>Pertambangan/Penggalian</item>
+        <item>Industri Pengolahan</item>
+        <item>Listrik dan Gas</item>
+        <item>Bangunan/Kontruksi</item>
+        <item>Perdagangan</item>
+        <item>Hotel &amp; Rumah Makan</item>
+        <item>Transportasi &amp; Pergudangan</item>
+        <item>Informasi &amp; Komunikasi</item>
+        <item>Keuangan &amp; Asuransi</item>
+        <item>Jasa Pendidikan</item>
+        <item>Jasa Kesehatan</item>
+        <item>Jasa Kemasyarakatan, Pemerintah &amp; Perorangan</item>
+        <item>Pemulung</item>
+        <item>Lainnya</item>
+    </string-array>
+    <string-array name="status_kedudukan">
+        <item>Berusaha Sendiri</item>
+        <item>Berusaha Dibantu Buruh Tidak Tetap/Tidak Dibayar</item>
+        <item>Berusaha Dibantu Buruh Tetap/Dibayar</item>
+        <item>Buruh/Karyawan/Pegawai Swasta</item>
+        <item>PNS/TNI/Polri/BUMN/BUMD/Anggota Legislatif</item>
+        <item>Pekerja Bebas Pertanian</item>
+        <item>Pekerja Bebas Non-Pertanian</item>
+        <item>Pekerja Keluarga/Tidak Dibayar</item>
+    </string-array>
+    <string-array name="status_keberadaan">
+        <item>Tinggal di Ruta</item>
+        <item>Meninggal</item>
+        <item>Tidak Tinggal di Ruta/Pindah</item>
+        <item>Anggota Rumah Tangga Baru</item>
+        <item>Kesalahan Prelist</item>
+        <item>Tidak Ditemukan</item>
+    </string-array>
+    <string-array name="jenis_kelamin">
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+</resources>
