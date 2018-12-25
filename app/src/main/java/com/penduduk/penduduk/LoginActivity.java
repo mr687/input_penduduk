@@ -36,9 +36,6 @@ public class LoginActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        pd = new ProgressDialog(getBaseContext());
-        pd.setMessage("Loading...");
-
         sharedPreferences = getSharedPreferences(AUTH_SESSION,Context.MODE_PRIVATE);
         String token= sharedPreferences.getString("token",null);
         if(token != null){
@@ -48,6 +45,8 @@ public class LoginActivity extends Activity {
             startActivity(it);
         }
 
+//        pd = new ProgressDialog(getBaseContext());
+//        pd.setMessage("Loading...");
         txtUsername = (EditText) findViewById(R.id.txtUsername);
         txtPassword = (EditText) findViewById(R.id.txtPassword);
 
