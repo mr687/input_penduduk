@@ -75,18 +75,24 @@ public class LoginActivity extends Activity {
                     @Override
                     public void onResponse(JSONObject response) {
                         pd.hide();
-                        int userid = 0;
+                        String userid = "";
                         String token = "";
+                        String role = "";
+                        String kecamatan = "";
+                        String desa = "";
                         Log.d("respone.login", response.toString());
                         try {
-                            userid = response.getInt("userid");
+                            role = response.getString("Role");
+                            kecamatan = response.getString("Kecamatan");
+                            desa = response.getString("Desa");
+                            userid = response.getString("Nik");
                             token = response.getString("token");
                         } catch (Exception ex) {
                             ex.printStackTrace();
                         }
 
-                        if (userid > 0) {
-                            saveToken(userid, token);
+                        if (userid != "0") {
+                            saveToken(userid, token,role,kecamatan,desa);
                             txtUsername.setText("");
                             txtPassword.setText("");
                             Intent it = new Intent(getBaseContext(), MainActivity.class);
@@ -108,10 +114,13 @@ public class LoginActivity extends Activity {
         RequestQueue rq = Volley.newRequestQueue(this);
         rq.add(request);
     }
-    public void saveToken(int uid, String token){
+    public void saveToken(String uid, String token,String role,String kecamatan,String desa){
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("token",token);
-        editor.putInt("uid",uid);
+        editor.putString("uid",uid);
+        editor.putString("role",role);
+        editor.putString("kecamatan",kecamatan);
+        editor.putString("desa",desa);
         editor.commit();
     }
 }
