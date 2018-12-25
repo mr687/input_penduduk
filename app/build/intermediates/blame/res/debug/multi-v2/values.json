@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/media/D/PROJECT/Programming/Android/Penduduk/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/home/daphh/Android/Projects/input_penduduk/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/home/daphh/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/8a1e78fa47165f336167f6a7c8cbff82/res/values/values.xml",
@@ -40,22 +40,22 @@
                     }
                 },
                 {
-                    "source": "/media/D/PROJECT/Programming/Android/Penduduk/app/src/main/res/values/styles.xml",
+                    "source": "/home/daphh/Android/Projects/input_penduduk/app/src/main/res/values/strings.xml",
                     "from": {
-                        "startLines": "3,15,10,17",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "57,540,384,634",
-                        "endLines": "8,15,13,17",
-                        "endColumns": "12,90,12,80",
-                        "endOffsets": "376,626,532,710"
+                        "startLines": "94,76,86,125,200,50,146,37,250,111,25,178,190,141,46,209,173,161,242,232,19,12,135,62,81,105,117,8,1,11,7,6,5,4,3,2",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3577,2953,3312,4627,7368,2004,5354,1545,9444,4127,1102,6704,7112,5161,1851,7668,6507,6021,9131,8631,901,664,4960,2422,3132,3949,4328,478,17,593,415,339,278,201,126,64",
+                        "endLines": "104,80,93,134,208,61,160,45,253,116,36,189,199,145,49,231,177,172,249,241,24,18,140,75,85,110,124,8,1,11,7,6,5,4,3,2",
+                        "endColumns": "19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,52,45,69,61,74,59,75,73,60",
+                        "endOffsets": "3943,3126,3571,4954,7662,2416,6015,1845,9564,4322,1539,7106,7362,5348,1998,8625,6698,6501,9438,9125,1096,895,5155,2947,3306,4121,4621,526,58,658,472,409,333,272,195,120"
                     },
                     "to": {
-                        "startLines": "2539,2545,2546,2550",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "150847,151166,151256,151406",
-                        "endLines": "2544,2545,2549,2550",
-                        "endColumns": "12,89,12,79",
-                        "endOffsets": "151161,151251,151401,151481"
+                        "startLines": "2,13,18,26,36,45,57,72,81,85,91,103,115,125,130,134,157,162,174,182,192,198,205,211,225,230,236,2506,2507,2514,2517,2518,2519,2520,2521,2529",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "150,508,682,936,1259,1550,1956,2608,2905,3027,3222,3653,4049,4295,4483,4632,5572,5764,6238,6543,7033,7228,7458,7653,8170,8345,8517,147635,147688,148495,148794,148856,148931,148991,149067,150067",
+                        "endLines": "12,17,25,35,44,56,71,80,84,90,102,114,124,129,133,156,161,173,181,191,197,204,210,224,229,235,243,2506,2507,2514,2517,2518,2519,2520,2521,2529",
+                        "endColumns": "19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,52,45,69,61,74,59,75,73,60",
+                        "endOffsets": "503,677,931,1254,1545,1951,2603,2900,3022,3217,3648,4044,4290,4478,4627,5567,5759,6233,6538,7028,7223,7453,7648,8165,8340,8512,8803,147683,147729,148560,148851,148926,148986,149062,149136,150123"
                     }
                 },
                 {
@@ -76,20 +76,37 @@
                     }
                 },
                 {
-                    "source": "/media/D/PROJECT/Programming/Android/Penduduk/app/src/main/res/values/ic_launcher_background.xml",
+                    "source": "/home/daphh/Android/Projects/input_penduduk/app/src/main/res/values/drawables.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endColumns": "56",
-                        "endOffsets": "109"
+                        "startLines": "1,2,4,6,5,3",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "76,165,351,527,440,256",
+                        "endColumns": "87,89,87,83,85,93",
+                        "endOffsets": "159,250,434,606,521,345"
                     },
                     "to": {
-                        "startLines": "458",
-                        "startColumns": "4",
-                        "startOffsets": "20219",
-                        "endColumns": "56",
-                        "endOffsets": "20271"
+                        "startLines": "2408,2409,2410,2411,2412,2413",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "141548,141636,141726,141814,141898,141984",
+                        "endColumns": "87,89,87,83,85,93",
+                        "endOffsets": "141631,141721,141809,141893,141979,142073"
+                    }
+                },
+                {
+                    "source": "/home/daphh/Android/Projects/input_penduduk/app/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "157,57,105",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "198,99,151"
+                    },
+                    "to": {
+                        "startLines": "434,435,436",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "18631,18677,18724",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "18672,18719,18770"
                     }
                 },
                 {
@@ -169,56 +186,39 @@
                     }
                 },
                 {
-                    "source": "/media/D/PROJECT/Programming/Android/Penduduk/app/src/main/res/values/strings.xml",
+                    "source": "/home/daphh/Android/Projects/input_penduduk/app/src/main/res/values/styles.xml",
                     "from": {
-                        "startLines": "94,76,86,125,200,50,146,37,250,111,25,178,190,141,46,209,173,161,242,232,19,12,135,62,81,105,117,8,1,11,7,6,5,4,3,2",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3577,2953,3312,4627,7368,2004,5354,1545,9444,4127,1102,6704,7112,5161,1851,7668,6507,6021,9131,8631,901,664,4960,2422,3132,3949,4328,478,17,593,415,339,278,201,126,64",
-                        "endLines": "104,80,93,134,208,61,160,45,253,116,36,189,199,145,49,231,177,172,249,241,24,18,140,75,85,110,124,8,1,11,7,6,5,4,3,2",
-                        "endColumns": "19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,52,45,69,61,74,59,75,73,60",
-                        "endOffsets": "3943,3126,3571,4954,7662,2416,6015,1845,9564,4322,1539,7106,7362,5348,1998,8625,6698,6501,9438,9125,1096,895,5155,2947,3306,4121,4621,526,58,658,472,409,333,272,195,120"
+                        "startLines": "3,15,10,17",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "57,540,384,634",
+                        "endLines": "8,15,13,17",
+                        "endColumns": "12,90,12,80",
+                        "endOffsets": "376,626,532,710"
                     },
                     "to": {
-                        "startLines": "2,13,18,26,36,45,57,72,81,85,91,103,115,125,130,134,157,162,174,182,192,198,205,211,225,230,236,2506,2507,2514,2517,2518,2519,2520,2521,2529",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "150,508,682,936,1259,1550,1956,2608,2905,3027,3222,3653,4049,4295,4483,4632,5572,5764,6238,6543,7033,7228,7458,7653,8170,8345,8517,147635,147688,148495,148794,148856,148931,148991,149067,150067",
-                        "endLines": "12,17,25,35,44,56,71,80,84,90,102,114,124,129,133,156,161,173,181,191,197,204,210,224,229,235,243,2506,2507,2514,2517,2518,2519,2520,2521,2529",
-                        "endColumns": "19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,19,52,45,69,61,74,59,75,73,60",
-                        "endOffsets": "503,677,931,1254,1545,1951,2603,2900,3022,3217,3648,4044,4290,4478,4627,5567,5759,6233,6538,7028,7223,7453,7648,8165,8340,8512,8803,147683,147729,148560,148851,148926,148986,149062,149136,150123"
+                        "startLines": "2539,2545,2546,2550",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "150847,151166,151256,151406",
+                        "endLines": "2544,2545,2549,2550",
+                        "endColumns": "12,89,12,79",
+                        "endOffsets": "151161,151251,151401,151481"
                     }
                 },
                 {
-                    "source": "/media/D/PROJECT/Programming/Android/Penduduk/app/src/main/res/values/dimens.xml",
+                    "source": "/home/daphh/Android/Projects/input_penduduk/app/src/main/res/values/ic_launcher_background.xml",
                     "from": {
-                        "startLines": "2,3,6,5,4",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "90,149,316,265,206",
-                        "endColumns": "57,55,41,49,57",
-                        "endOffsets": "143,200,353,310,259"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "56",
+                        "endOffsets": "109"
                     },
                     "to": {
-                        "startLines": "2259,2260,2317,2379,2380",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "132159,132217,135908,139797,139847",
-                        "endColumns": "57,55,41,49,57",
-                        "endOffsets": "132212,132268,135945,139842,139900"
-                    }
-                },
-                {
-                    "source": "/media/D/PROJECT/Programming/Android/Penduduk/app/src/main/res/values/drawables.xml",
-                    "from": {
-                        "startLines": "1,2,4,6,5,3",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "76,165,351,527,440,256",
-                        "endColumns": "87,89,87,83,85,93",
-                        "endOffsets": "159,250,434,606,521,345"
-                    },
-                    "to": {
-                        "startLines": "2408,2409,2410,2411,2412,2413",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "141548,141636,141726,141814,141898,141984",
-                        "endColumns": "87,89,87,83,85,93",
-                        "endOffsets": "141631,141721,141809,141893,141979,142073"
+                        "startLines": "458",
+                        "startColumns": "4",
+                        "startOffsets": "20219",
+                        "endColumns": "56",
+                        "endOffsets": "20271"
                     }
                 },
                 {
@@ -260,20 +260,20 @@
                     }
                 },
                 {
-                    "source": "/media/D/PROJECT/Programming/Android/Penduduk/app/src/main/res/values/colors.xml",
+                    "source": "/home/daphh/Android/Projects/input_penduduk/app/src/main/res/values/dimens.xml",
                     "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "157,57,105",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "198,99,151"
+                        "startLines": "2,3,6,5,4",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "90,149,316,265,206",
+                        "endColumns": "57,55,41,49,57",
+                        "endOffsets": "143,200,353,310,259"
                     },
                     "to": {
-                        "startLines": "434,435,436",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "18631,18677,18724",
-                        "endColumns": "45,46,50",
-                        "endOffsets": "18672,18719,18770"
+                        "startLines": "2259,2260,2317,2379,2380",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "132159,132217,135908,139797,139847",
+                        "endColumns": "57,55,41,49,57",
+                        "endOffsets": "132212,132268,135945,139842,139900"
                     }
                 }
             ]

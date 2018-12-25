@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/media/D/PROJECT/Programming/Android/Penduduk/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml",
+            "outputFile": "/home/daphh/Android/Projects/input_penduduk/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml",
             "map": [
                 {
                     "source": "/home/daphh/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/04a2220066da3e07cb73cddc7de0763d/res/values-ca/values-ca.xml",

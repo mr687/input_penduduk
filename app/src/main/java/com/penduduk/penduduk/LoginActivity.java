@@ -1,6 +1,7 @@
 package com.penduduk.penduduk;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -27,12 +28,16 @@ public class LoginActivity extends Activity {
     public static final String AUTH_SESSION= "PERF_AUTH_SESSION";
     SharedPreferences sharedPreferences;
     EditText txtUsername,txtPassword;
+    ProgressDialog pd;
     Button btnLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        pd = new ProgressDialog(getBaseContext());
+        pd.setMessage("Loading...");
 
         sharedPreferences = getSharedPreferences(AUTH_SESSION,Context.MODE_PRIVATE);
         String token= sharedPreferences.getString("token",null);
@@ -59,6 +64,7 @@ public class LoginActivity extends Activity {
         txtPassword.setText("");
     }
     public void sendRequest(){
+        pd.show();
         String username = txtUsername.getText().toString();
         String password = txtPassword.getText().toString();
         HashMap<String, String> param = new HashMap<>();
@@ -68,6 +74,7 @@ public class LoginActivity extends Activity {
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
+                        pd.hide();
                         int userid = 0;
                         String token = "";
                         Log.d("respone.login", response.toString());
@@ -94,6 +101,7 @@ public class LoginActivity extends Activity {
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                pd.hide();
                 Log.d("json.response", error.getMessage());
             }
         });

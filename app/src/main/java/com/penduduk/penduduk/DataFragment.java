@@ -1,5 +1,6 @@
 package com.penduduk.penduduk;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
@@ -34,6 +35,7 @@ public class DataFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
+    ProgressDialog pd;
     List<Penduduk> penduduks;
     List<DataART> ARTs;
     RecyclerView recyclerView;
@@ -71,18 +73,23 @@ public class DataFragment extends Fragment {
     }
 
     private void getDataOnline(){
+        pd = new ProgressDialog(getActivity().getBaseContext());
+        pd.setMessage("Loading...");
+        pd.show();
         JsonArrayRequest request = new JsonArrayRequest(EndPoint.PENDUDUK_URL,
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
+                        pd.hide();
+                        Log.d("TAGG",response.toString());
                         Penduduk newPenduduk;
                         DataART newART;
                         penduduks = new ArrayList<>();
                         ARTs = new ArrayList<>();
                         try {
-                            for (int i = 0; i < response.length(); i++) {
-                                JSONObject objRes = (JSONObject) response.get(i);
-                                Log.d("TAGG",objRes.getJSONObject("artData").toString());
+//                            for (int i = 0; i < response.length(); i++) {
+//                                JSONObject objRes = (JSONObject) response.get(i);
+//                                Log.d("TAGG",objRes.getJSONObject("artData").toString());
 //                                newART = new DataART(
 //                                        objRes.optInt("b4_k1",0),
 //                                        objRes.optString("b4_k2a",""),
@@ -177,23 +184,24 @@ public class DataFragment extends Fragment {
 //                                        objRes.optInt("b4_k1",0),
 //                                        ARTs);
 //                                penduduks.add(newPenduduk);
-                            }
-                            adapter = new RecyclerViewAdapter(penduduks,getActivity().getBaseContext());
-                            recyclerView.setAdapter(adapter);
-                            recyclerView.setLayoutManager(new GridLayoutManager(getActivity().getBaseContext(),2));
-                            recyclerView.setItemAnimator(new DefaultItemAnimator());
+//                            }
+//                            adapter = new RecyclerViewAdapter(penduduks,getActivity().getBaseContext());
+//                            recyclerView.setAdapter(adapter);
+//                            recyclerView.setLayoutManager(new GridLayoutManager(getActivity().getBaseContext(),2));
+//                            recyclerView.setItemAnimator(new DefaultItemAnimator());
                         } catch (Exception ex) {
                             ex.printStackTrace();
                         }
 //                        adapter = new RecyclerViewAdapter(list,getContext());
-                        recyclerView.setAdapter(adapter);
-                        recyclerView.setLayoutManager(new GridLayoutManager(getActivity().getBaseContext(),2));
-                        recyclerView.setItemAnimator(new DefaultItemAnimator());
+//                        recyclerView.setAdapter(adapter);
+//                        recyclerView.setLayoutManager(new GridLayoutManager(getActivity().getBaseContext(),2));
+//                        recyclerView.setItemAnimator(new DefaultItemAnimator());
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
+                        pd.hide();
                         error.printStackTrace();
                     }
                 }
