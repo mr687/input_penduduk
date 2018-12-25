@@ -41,7 +41,7 @@ public class LoginActivity extends Activity {
 
         sharedPreferences = getSharedPreferences(AUTH_SESSION,Context.MODE_PRIVATE);
         String token= sharedPreferences.getString("token",null);
-        if(token == null){
+        if(token != null){
             Intent it = new Intent(this, MainActivity.class);
             it.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
             it.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
