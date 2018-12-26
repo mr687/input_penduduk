@@ -24,6 +24,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Utils {
+    public static final String AUTH_SESSION= "PERF_AUTH_SESSION";
+    public boolean status = false;
     public boolean isOnline() {
         Runtime runtime = Runtime.getRuntime();
         try {

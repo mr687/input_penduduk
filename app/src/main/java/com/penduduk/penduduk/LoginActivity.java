@@ -23,9 +23,10 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 
+import static com.penduduk.penduduk.Utils.AUTH_SESSION;
+
 public class LoginActivity extends Activity {
 
-    public static final String AUTH_SESSION= "PERF_AUTH_SESSION";
     SharedPreferences sharedPreferences;
     EditText txtUsername,txtPassword;
     ProgressDialog pd;
@@ -89,8 +90,7 @@ public class LoginActivity extends Activity {
                         } catch (Exception ex) {
                             ex.printStackTrace();
                         }
-
-                        if (userid != "0") {
+                        if (userid != "") {
                             saveToken(userid, token,role,kecamatan,desa);
                             txtUsername.setText("");
                             txtPassword.setText("");
@@ -101,6 +101,8 @@ public class LoginActivity extends Activity {
                         } else {
                             Toast.makeText(getBaseContext(), "Username / Password salah",
                                     Toast.LENGTH_SHORT).show();
+                            txtUsername.setText("");
+                            txtPassword.setText("");
                         }
                     }
                 }, new Response.ErrorListener() {

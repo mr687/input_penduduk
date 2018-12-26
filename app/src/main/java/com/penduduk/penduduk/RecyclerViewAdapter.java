@@ -184,7 +184,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             txtNama = (TextView) itemView.findViewById(R.id.txtNama);
             btnEdit = (Button) itemView.findViewById(R.id.btnEdit);
             btnSend = (Button) itemView.findViewById(R.id.btnSend);
-            if(utils.isOnline()){
+            if(!utils.status){
                 btnEdit.setVisibility(View.VISIBLE);
                 btnSend.setVisibility(View.GONE);
             }else{

@@ -18,12 +18,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import static com.penduduk.penduduk.Utils.AUTH_SESSION;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
         FomFragment.OnFragmentInteractionListener,
         HomeFragment.OnFragmentInteractionListener,
         DataFragment.OnFragmentInteractionListener{
-    public static final String AUTH_SESSION= "PERF_AUTH_SESSION";
     SharedPreferences sharedPreferences;
     DrawerLayout drawerLayout;
     Intent it;
