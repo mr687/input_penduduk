@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -17,6 +18,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -49,6 +51,10 @@ public class DataFragment extends Fragment {
     DBHelper helper;
     boolean isOnline= false;
     boolean isScrolling = false;
+    GridLayoutManager layoutManager;
+    int currentItems, totalItems,scrollOutItems;
+    ProgressBar progressBar;
+    int currentItemPosition = 0;
 
     private OnFragmentInteractionListener mListener;
     @Override
@@ -64,11 +70,36 @@ public class DataFragment extends Fragment {
             getActivity().setTitle("Data Penduduk (Offline)");
         }
 
-        penduduks  = new ArrayList<Penduduk>();
         helper = new DBHelper(getContext());
         recyclerView  = (RecyclerView)view.findViewById(R.id.recyclerView);
+        progressBar = (ProgressBar)view.findViewById(R.id.progress);
+        layoutManager = new GridLayoutManager(getActivity().getBaseContext(),2);
 
+        penduduks = new ArrayList<>();
+        ARTs = new ArrayList<>();
         refreshData();
+        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+                super.onScrollStateChanged(recyclerView, newState);
+                if(newState==AbsListView.OnScrollListener.SCROLL_STATE_TOUCH_SCROLL){
+                    isScrolling = true;
+                }
+            }
+
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                super.onScrolled(recyclerView, dx, dy);
+                currentItems = layoutManager.getChildCount();
+                totalItems = layoutManager.getItemCount();
+                scrollOutItems = layoutManager.findFirstVisibleItemPosition();
+
+                if(isScrolling && (currentItems + scrollOutItems == totalItems)){
+                    isScrolling = false;
+                    getDataOnline();
+                }
+            }
+        });
         return view;
     }
 
@@ -81,6 +112,8 @@ public class DataFragment extends Fragment {
     }
 
     private void getDataOnline(){
+        Log.d("TAGG","Current : " + currentItemPosition+"");
+        Log.d("TAGG","Total : " + totalItems+"");
         pd = new ProgressDialog(getContext());
         pd.setMessage("Loading...");
         pd.show();
@@ -90,8 +123,6 @@ public class DataFragment extends Fragment {
                     public void onResponse(JSONArray response) {
                         Penduduk newPenduduk;
                         DataART newART;
-                        penduduks = new ArrayList<>();
-                        ARTs = new ArrayList<>();
                         try {
                             for (int i = 0; i < response.length(); i++) {
                                 JSONObject objRes = (JSONObject) response.get(i);
@@ -196,22 +227,16 @@ public class DataFragment extends Fragment {
                             }
                             Utils utils = new Utils();
                             utils.status = true;
-                            adapter = new RecyclerViewAdapter(penduduks,getActivity().getBaseContext());
-                            recyclerView.setAdapter(adapter);
-                            recyclerView.setLayoutManager(new GridLayoutManager(getActivity().getBaseContext(),2));
-                            recyclerView.setItemAnimator(new DefaultItemAnimator());
-                            recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
-                                @Override
-                                public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
-                                    super.onScrollStateChanged(recyclerView, newState);
-                                    if(newState==AbsListView.OnScrollListener.SCROLL_STATE_TOUCH_SCROLL){
-                                        isScrolling = true;
-                                    }
-                                }
-
-
-                            });
+                            if(totalItems > 0){
+                                adapter.notifyDataSetChanged();
+                            }else{
+                                adapter = new RecyclerViewAdapter(penduduks,getActivity().getBaseContext());
+                                recyclerView.setAdapter(adapter);
+                                recyclerView.setLayoutManager(layoutManager);
+                                recyclerView.setItemAnimator(new DefaultItemAnimator());
+                            }
                             pd.hide();
+                            currentItemPosition += 20;
                         } catch (Exception ex) {
                             pd.hide();
                             ex.printStackTrace();
@@ -236,7 +261,7 @@ public class DataFragment extends Fragment {
                 String nik= sharedPreferences.getString("uid",null);
                 Map<String,String> params = new HashMap<String,String>();
                 String limit = "20";
-                String offset = "0";
+                String offset = currentItemPosition+"";
                 String keywords = "";
                 params.put("uid",nik);
                 params.put("token",token);
@@ -249,8 +274,6 @@ public class DataFragment extends Fragment {
         RequestQueue rq = Volley.newRequestQueue(getActivity().getBaseContext());
         rq.add(request);
     }
-
-
 
     private void getDataOffline(List<Penduduk> list){
         adapter = new RecyclerViewAdapter(list,getContext());
