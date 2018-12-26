@@ -832,6 +832,7 @@ drawable ic_menu_manage
 drawable ic_menu_send
 drawable ic_menu_share
 drawable ic_menu_slideshow
+drawable ic_search_black_24dp
 drawable logo
 drawable navigation_empty_icon
 drawable notification_action_background
@@ -853,6 +854,7 @@ id ALT
 id CTRL
 id FUNCTION
 id META
+id OK
 id SHIFT
 id SYM
 id action0
@@ -1068,6 +1070,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id search
 id search_badge
 id search_bar
 id search_button

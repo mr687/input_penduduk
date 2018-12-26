@@ -48,7 +48,7 @@ public class Utils {
                                 long resp = helper.deletePlayer(response.getString("id_ruta"));
                                 if(resp == 1){
                                     DataFragment dataFragment = new DataFragment();
-                                    dataFragment.refreshData();
+                                    dataFragment.refreshData(true);
                                 }
                             }else if(response.getInt("status") == 2){
                                 Toast.makeText(mContext,"Data gagal di simpan di database. ID Ruta " + response.getString("id_ruta") + " sudah ada.",Toast.LENGTH_LONG).show();

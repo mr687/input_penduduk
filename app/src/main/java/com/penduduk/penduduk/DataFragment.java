@@ -12,12 +12,15 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -55,6 +58,9 @@ public class DataFragment extends Fragment {
     int currentItems, totalItems,scrollOutItems;
     ProgressBar progressBar;
     int currentItemPosition = 0;
+    EditText search;
+    String keywords;
+    Button btnOK;
 
     private OnFragmentInteractionListener mListener;
     @Override
@@ -69,15 +75,16 @@ public class DataFragment extends Fragment {
         }else{
             getActivity().setTitle("Data Penduduk (Offline)");
         }
-
+        keywords="";
         helper = new DBHelper(getContext());
         recyclerView  = (RecyclerView)view.findViewById(R.id.recyclerView);
         progressBar = (ProgressBar)view.findViewById(R.id.progress);
+        search = (EditText) view.findViewById(R.id.search);
+        btnOK  = (Button) view.findViewById(R.id.OK);
         layoutManager = new GridLayoutManager(getActivity().getBaseContext(),2);
-
         penduduks = new ArrayList<>();
         ARTs = new ArrayList<>();
-        refreshData();
+        getDataOnline(false);
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
@@ -95,34 +102,50 @@ public class DataFragment extends Fragment {
                 scrollOutItems = layoutManager.findFirstVisibleItemPosition();
 
                 if(isScrolling && (currentItems + scrollOutItems == totalItems)){
-                    isScrolling = false;
-                    getDataOnline();
+                    if(search.getText().toString().equals("")){
+                        isScrolling = false;
+                        refreshData(true);
+                    }
                 }
+            }
+        });
+        btnOK.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                currentItemPosition = 0;
+                keywords = search.getText().toString();
+                refreshData(false);
             }
         });
         return view;
     }
 
-    public void refreshData(){
+    public void refreshData(boolean isupdate){
         if(isOnline){
-            getDataOnline();
+            getDataOnline(isupdate);
         }else{
             getDataOffline(helper.allPlayers());
         }
     }
 
-    private void getDataOnline(){
-        Log.d("TAGG","Current : " + currentItemPosition+"");
-        Log.d("TAGG","Total : " + totalItems+"");
-        pd = new ProgressDialog(getContext());
-        pd.setMessage("Loading...");
-        pd.show();
+    private void getDataOnline(final boolean isupdate){
+        if(isupdate){
+            progressBar.setVisibility(View.VISIBLE);
+        }else{
+            pd = new ProgressDialog(getContext());
+            pd.setMessage("Loading...");
+            pd.show();
+        }
         JsonArrayRequest request = new JsonArrayRequest(EndPoint.PENDUDUK_URL,
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
                         Penduduk newPenduduk;
                         DataART newART;
+                        if(!isupdate){
+                            penduduks = new ArrayList<Penduduk>();
+                            ARTs = new ArrayList<DataART>();
+                        }
                         try {
                             for (int i = 0; i < response.length(); i++) {
                                 JSONObject objRes = (JSONObject) response.get(i);
@@ -227,7 +250,7 @@ public class DataFragment extends Fragment {
                             }
                             Utils utils = new Utils();
                             utils.status = true;
-                            if(totalItems > 0){
+                            if(isupdate){
                                 adapter.notifyDataSetChanged();
                             }else{
                                 adapter = new RecyclerViewAdapter(penduduks,getActivity().getBaseContext());
@@ -235,22 +258,30 @@ public class DataFragment extends Fragment {
                                 recyclerView.setLayoutManager(layoutManager);
                                 recyclerView.setItemAnimator(new DefaultItemAnimator());
                             }
-                            pd.hide();
-                            currentItemPosition += 20;
+                            if(isupdate){
+                                progressBar.setVisibility(View.GONE);
+                            }else{
+                                pd.hide();
+                                currentItemPosition += 20;
+                            }
                         } catch (Exception ex) {
-                            pd.hide();
+                            if(isupdate){
+                                progressBar.setVisibility(View.GONE);
+                            }else{
+                                pd.hide();
+                            }
                             ex.printStackTrace();
                         }
-//                        adapter = new RecyclerViewAdapter(list,getContext());
-//                        recyclerView.setAdapter(adapter);
-//                        recyclerView.setLayoutManager(new GridLayoutManager(getActivity().getBaseContext(),2));
-//                        recyclerView.setItemAnimator(new DefaultItemAnimator());
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        pd.hide();
+                        if(isupdate){
+                            progressBar.setVisibility(View.GONE);
+                        }else{
+                            pd.hide();
+                        }
                         error.printStackTrace();
                     }
                 }
@@ -262,12 +293,12 @@ public class DataFragment extends Fragment {
                 Map<String,String> params = new HashMap<String,String>();
                 String limit = "20";
                 String offset = currentItemPosition+"";
-                String keywords = "";
                 params.put("uid",nik);
                 params.put("token",token);
                 params.put("limit",limit);
                 params.put("offset",offset);
                 params.put("keywords",keywords);
+                Log.d("TAGG",params.toString());
                 return params;
             }
         };

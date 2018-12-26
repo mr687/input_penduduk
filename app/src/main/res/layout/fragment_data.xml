@@ -9,8 +9,32 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/search"
+                    android:layout_height="wrap_content"
+                    android:hint="Cari data penduduk"
+                    android:drawableLeft="@drawable/ic_search_black_24dp"/>
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/OK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK"/>
+        </LinearLayout>
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recyclerView"
+            android:layout_marginTop="80dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
