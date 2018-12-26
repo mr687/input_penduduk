@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/daphh/Android/Projects/input_penduduk/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
+            "outputFile": "D:\\Android\\Projects\\input_penduduk\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/daphh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/2463fe47b5ca5e28426834d894248861/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "source": "C:\\Users\\rasdhan alfarizqi\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.0.aar\\8b46c53419f319cf68033bf7c8a203aa\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

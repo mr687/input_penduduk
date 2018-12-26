@@ -1,5 +1,6 @@
 package com.penduduk.penduduk;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity
         FomFragment.OnFragmentInteractionListener,
         HomeFragment.OnFragmentInteractionListener,
         DataFragment.OnFragmentInteractionListener{
+    public static final String AUTH_SESSION= "PERF_AUTH_SESSION";
+    SharedPreferences sharedPreferences;
     DrawerLayout drawerLayout;
     Intent it;
     SharedPreferences.Editor editor;
@@ -33,6 +36,8 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        sharedPreferences = getSharedPreferences(AUTH_SESSION,Context.MODE_PRIVATE);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -94,9 +99,9 @@ public class MainActivity extends AppCompatActivity
             bundle.putBoolean("isOnline",false);
             fragment.setArguments(bundle);
         } else if (id == R.id.nav_keluar) {
-//            editor = preferences.edit();
-//            editor.clear();
-//            editor.commit();
+            editor = sharedPreferences.edit();
+            editor.clear();
+            editor.commit();
 
             it = new Intent(this, LoginActivity.class);
             it.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);

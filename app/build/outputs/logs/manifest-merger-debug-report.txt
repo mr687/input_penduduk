@@ -1,139 +1,139 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:2:1-27:12
-MERGED from [com.android.support:design:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/design-27.0.0.aar/6138e4a1cc52b522464077131d47238a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/2463fe47b5ca5e28426834d894248861/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.0.aar/dea3a1da668bab4357b31db880c69e97/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.0.aar/0494873246d63007d5ceb5dbacbb098a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/daphh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/cfda9f4f4e498e660349fa0fee0862a2/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-v4:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.0.aar/d8418414dae5d14e5b03d1cb4d04f699/AndroidManifest.xml:17:1-22:12
-MERGED from [com.mcxiaoke.volley:library-aar:1.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/library-aar-1.0.0.aar/a7c8d9a056775817395bd6f629323f50/AndroidManifest.xml:1:70-7:12
-MERGED from [com.android.support:support-fragment:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.0.aar/4feb9e12a1390a819f4f2d82b3422c37/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.0.aar/fe93f28b68bd7d9e269bfc7fa80455b2/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.0.aar/e5820873904c97e720182ea57dc33310/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.0.aar/d90072e1aaf4b44f88feb26c1f7a24cc/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.0.aar/64e5042a4e32ce30081553361fdecd31/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.0.aar/3f2f875e33186305821f985f4a2b9553/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/transition-27.0.0.aar/f757ff884ab672a7d953717664f8e293/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/8f5b6a27129e28447abfb93247a9034e/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f61a3a2b54034923128e709a1deca3e2/AndroidManifest.xml:17:1-30:12
-INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:2:1-27:12
-INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:2:1-27:12
+ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:2:1-27:12
+MERGED from [com.android.support:design:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\design-27.0.0.aar\0f4c5bf5889008515ab4bb1b9816316d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.0.aar\8b46c53419f319cf68033bf7c8a203aa\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.0.aar\5494d2d96e4a8dbab34b3574139687c1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.0.aar\ad99b086b57113911f3d68ad175313c2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\a2b01ff119f11a5e6439a2bbb64fb0b3\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.0.aar\54e76e4c4d55f4491474a9123d25fb6a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.mcxiaoke.volley:library-aar:1.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\library-aar-1.0.0.aar\6d3568df6dd7422eb5df7d20399ef519\AndroidManifest.xml:1:70-7:12
+MERGED from [com.android.support:support-fragment:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.0.aar\ffa7e19a85fc60acca7398d5d8868ce7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.0.aar\d286b55ebc65e061d47947a36812e26f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.0.aar\d4eaf4d8ebbf573fda4afe337ce61d88\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.0.aar\c394865c829bcbe21167e37093b0c7dd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.0.aar\6998cabdcb20040c44d7aa34fdf2cfcb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.0.aar\ee84818a7c1952258e3997052557e3d9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\transition-27.0.0.aar\d812b581555271fdee6787e5e58c3ceb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.0.aar\84595570d0ccab3215b598e28fe10ca1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\a29cb5c4c14d67bd305e9dba9ec0845c\AndroidManifest.xml:17:1-30:12
+INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:2:1-27:12
 	package
-		ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:3:5-36
-		INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml
-		INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml
+		ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:3:5-36
+		INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml
-		ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:2:1-27:12
-		INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml
+		INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:2:1-27:12
+		INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml
-		ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:2:1-27:12
-		INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml
+		INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:2:1-27:12
+		INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:5:5-67
+ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:7:5-25:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/daphh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/cfda9f4f4e498e660349fa0fee0862a2/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/daphh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/cfda9f4f4e498e660349fa0fee0862a2/AndroidManifest.xml:9:5-20
-MERGED from [com.mcxiaoke.volley:library-aar:1.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/library-aar-1.0.0.aar/a7c8d9a056775817395bd6f629323f50/AndroidManifest.xml:5:5-19
-MERGED from [com.mcxiaoke.volley:library-aar:1.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/library-aar-1.0.0.aar/a7c8d9a056775817395bd6f629323f50/AndroidManifest.xml:5:5-19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f61a3a2b54034923128e709a1deca3e2/AndroidManifest.xml:24:5-28:19
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f61a3a2b54034923128e709a1deca3e2/AndroidManifest.xml:24:5-28:19
+ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:7:5-25:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\a2b01ff119f11a5e6439a2bbb64fb0b3\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\a2b01ff119f11a5e6439a2bbb64fb0b3\AndroidManifest.xml:9:5-20
+MERGED from [com.mcxiaoke.volley:library-aar:1.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\library-aar-1.0.0.aar\6d3568df6dd7422eb5df7d20399ef519\AndroidManifest.xml:5:5-19
+MERGED from [com.mcxiaoke.volley:library-aar:1.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\library-aar-1.0.0.aar\6d3568df6dd7422eb5df7d20399ef519\AndroidManifest.xml:5:5-19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\a29cb5c4c14d67bd305e9dba9ec0845c\AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\a29cb5c4c14d67bd305e9dba9ec0845c\AndroidManifest.xml:24:5-28:19
 	android:supportsRtl
-		ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:12:9-35
+		ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:10:9-41
+		ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:11:9-54
+		ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:9:9-43
+		ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:8:9-35
+		ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:13:9-52
+		ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:13:9-52
 activity#com.penduduk.penduduk.LoginActivity
-ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:14:9-20:20
+ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:14:9-20:20
 	android:name
-		ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:14:19-48
+		ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:14:19-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:15:13-19:29
+ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:16:17-69
+ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:16:25-66
+		ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:18:17-77
+ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:18:27-74
+		ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:18:27-74
 activity#com.penduduk.penduduk.MainActivity
-ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:21:9-23:59
+ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:21:9-23:59
 	android:label
-		ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:23:13-56
+		ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:23:13-56
 	android:name
-		ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:22:13-41
+		ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:22:13-41
 activity#com.penduduk.penduduk.AddActivity
-ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:24:9-58
+ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:24:9-58
 	android:name
-		ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml:24:19-46
+		ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml:24:19-46
 uses-sdk
-INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml
-INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:design:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/design-27.0.0.aar/6138e4a1cc52b522464077131d47238a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/design-27.0.0.aar/6138e4a1cc52b522464077131d47238a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/2463fe47b5ca5e28426834d894248861/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/2463fe47b5ca5e28426834d894248861/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.0.aar/dea3a1da668bab4357b31db880c69e97/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.0.aar/dea3a1da668bab4357b31db880c69e97/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.0.aar/0494873246d63007d5ceb5dbacbb098a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.0.aar/0494873246d63007d5ceb5dbacbb098a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/daphh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/cfda9f4f4e498e660349fa0fee0862a2/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/daphh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/cfda9f4f4e498e660349fa0fee0862a2/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-v4:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.0.aar/d8418414dae5d14e5b03d1cb4d04f699/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.0.aar/d8418414dae5d14e5b03d1cb4d04f699/AndroidManifest.xml:20:5-44
-MERGED from [com.mcxiaoke.volley:library-aar:1.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/library-aar-1.0.0.aar/a7c8d9a056775817395bd6f629323f50/AndroidManifest.xml:3:5-72
-MERGED from [com.mcxiaoke.volley:library-aar:1.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/library-aar-1.0.0.aar/a7c8d9a056775817395bd6f629323f50/AndroidManifest.xml:3:5-72
-MERGED from [com.android.support:support-fragment:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.0.aar/4feb9e12a1390a819f4f2d82b3422c37/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.0.aar/4feb9e12a1390a819f4f2d82b3422c37/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.0.aar/fe93f28b68bd7d9e269bfc7fa80455b2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.0.aar/fe93f28b68bd7d9e269bfc7fa80455b2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.0.aar/e5820873904c97e720182ea57dc33310/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.0.aar/e5820873904c97e720182ea57dc33310/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.0.aar/d90072e1aaf4b44f88feb26c1f7a24cc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.0.aar/d90072e1aaf4b44f88feb26c1f7a24cc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.0.aar/64e5042a4e32ce30081553361fdecd31/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.0.aar/64e5042a4e32ce30081553361fdecd31/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.0.aar/3f2f875e33186305821f985f4a2b9553/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.0.aar/3f2f875e33186305821f985f4a2b9553/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/transition-27.0.0.aar/f757ff884ab672a7d953717664f8e293/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/transition-27.0.0.aar/f757ff884ab672a7d953717664f8e293/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/8f5b6a27129e28447abfb93247a9034e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/8f5b6a27129e28447abfb93247a9034e/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f61a3a2b54034923128e709a1deca3e2/AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f61a3a2b54034923128e709a1deca3e2/AndroidManifest.xml:20:5-22:41
-INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml
-INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml
+INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml
+INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\design-27.0.0.aar\0f4c5bf5889008515ab4bb1b9816316d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\design-27.0.0.aar\0f4c5bf5889008515ab4bb1b9816316d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.0.aar\8b46c53419f319cf68033bf7c8a203aa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.0.aar\8b46c53419f319cf68033bf7c8a203aa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.0.aar\5494d2d96e4a8dbab34b3574139687c1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.0.aar\5494d2d96e4a8dbab34b3574139687c1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.0.aar\ad99b086b57113911f3d68ad175313c2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.0.0.aar\ad99b086b57113911f3d68ad175313c2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\a2b01ff119f11a5e6439a2bbb64fb0b3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\a2b01ff119f11a5e6439a2bbb64fb0b3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.0.aar\54e76e4c4d55f4491474a9123d25fb6a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.0.aar\54e76e4c4d55f4491474a9123d25fb6a\AndroidManifest.xml:20:5-44
+MERGED from [com.mcxiaoke.volley:library-aar:1.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\library-aar-1.0.0.aar\6d3568df6dd7422eb5df7d20399ef519\AndroidManifest.xml:3:5-72
+MERGED from [com.mcxiaoke.volley:library-aar:1.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\library-aar-1.0.0.aar\6d3568df6dd7422eb5df7d20399ef519\AndroidManifest.xml:3:5-72
+MERGED from [com.android.support:support-fragment:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.0.aar\ffa7e19a85fc60acca7398d5d8868ce7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.0.aar\ffa7e19a85fc60acca7398d5d8868ce7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.0.aar\d286b55ebc65e061d47947a36812e26f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.0.aar\d286b55ebc65e061d47947a36812e26f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.0.aar\d4eaf4d8ebbf573fda4afe337ce61d88\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.0.aar\d4eaf4d8ebbf573fda4afe337ce61d88\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.0.aar\c394865c829bcbe21167e37093b0c7dd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.0.aar\c394865c829bcbe21167e37093b0c7dd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.0.aar\6998cabdcb20040c44d7aa34fdf2cfcb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.0.aar\6998cabdcb20040c44d7aa34fdf2cfcb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.0.aar\ee84818a7c1952258e3997052557e3d9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.0.aar\ee84818a7c1952258e3997052557e3d9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\transition-27.0.0.aar\d812b581555271fdee6787e5e58c3ceb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\transition-27.0.0.aar\d812b581555271fdee6787e5e58c3ceb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.0.aar\84595570d0ccab3215b598e28fe10ca1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.0.aar\84595570d0ccab3215b598e28fe10ca1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\a29cb5c4c14d67bd305e9dba9ec0845c\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\a29cb5c4c14d67bd305e9dba9ec0845c\AndroidManifest.xml:20:5-22:41
+INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml
+INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml
-		ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml
-		INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml
+		INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml
-		ADDED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml
-		INJECTED from /home/daphh/Android/Projects/input_penduduk/app/src/main/AndroidManifest.xml
+		INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\Projects\input_penduduk\app\src\main\AndroidManifest.xml
 meta-data#android.arch.lifecycle.VERSION
-ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f61a3a2b54034923128e709a1deca3e2/AndroidManifest.xml:25:9-27:47
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\a29cb5c4c14d67bd305e9dba9ec0845c\AndroidManifest.xml:25:9-27:47
 	android:value
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f61a3a2b54034923128e709a1deca3e2/AndroidManifest.xml:27:13-44
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\a29cb5c4c14d67bd305e9dba9ec0845c\AndroidManifest.xml:27:13-44
 	android:name
-		ADDED from [android.arch.lifecycle:runtime:1.0.0] /home/daphh/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f61a3a2b54034923128e709a1deca3e2/AndroidManifest.xml:26:13-58
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\rasdhan alfarizqi\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\a29cb5c4c14d67bd305e9dba9ec0845c\AndroidManifest.xml:26:13-58

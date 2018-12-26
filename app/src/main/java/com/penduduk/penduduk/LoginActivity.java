@@ -45,8 +45,8 @@ public class LoginActivity extends Activity {
             startActivity(it);
         }
 
-//        pd = new ProgressDialog(getBaseContext());
-//        pd.setMessage("Loading...");
+        pd = new ProgressDialog(this);
+        pd.setMessage("Loading...");
         txtUsername = (EditText) findViewById(R.id.txtUsername);
         txtPassword = (EditText) findViewById(R.id.txtPassword);
 
