@@ -7,6 +7,7 @@
     tools:context=".DataFragment">
 
     <RelativeLayout
+        android:id="@+id/searchLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
@@ -34,7 +35,7 @@
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recyclerView"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="280px"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 

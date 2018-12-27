@@ -176,7 +176,6 @@ public class FomFragment extends Fragment
         return container;
     }
     private void simpanPendudukOnline(String ruta_id) throws JSONException {
-        progressDialog.show();
         HashMap data = new HashMap();
         data.put("id_ruta",ruta_id);
         data.put("b1_k1a",b1_k1a.getText().toString());
@@ -277,11 +276,11 @@ public class FomFragment extends Fragment
         }else{
             data.put("artData",0);
         }
+        data.put("uid",sharedPreferences.getString("uid",null));
         utils.postData(EndPoint.ADDPENDUDUK_URL,data,getActivity().getBaseContext());
         progressDialog.hide();
     }
     private void simpanPendudukOffline(String ruta_id){
-        progressDialog.show();
         ruta_id = ruta_id;
         for (int i = 0;i<listART.size();i++){
             DataART data = listART.get(i);
@@ -386,6 +385,7 @@ public class FomFragment extends Fragment
             it.putExtra("listART",listART);
             startActivityForResult(it,123);
         }else if(v==btnSimpan){
+            progressDialog.show();
             String provinsi = String.format("%1$02d",b1_k1b);
             String kabupaten = String.format("%1$02d",b1_k2b);
             String kecamatan = String.format("%1$03d",Integer.parseInt(b1_k3b.getText().toString()));
@@ -393,24 +393,35 @@ public class FomFragment extends Fragment
             String korong = String.format("%1$05d",Integer.parseInt(txtKodeSLS.getText().toString()));
             String nourut = String.format("%1$03d",Integer.parseInt(txtNoUrutRumahTangga.getText().toString()));
             String ruta_id = provinsi+kabupaten+kecamatan+desa+korong+nourut;
-            if(utils.isOnline()){
+
+            Bundle bundle = new Bundle();
+            DataFragment dataFragment = new DataFragment();
+            Log.d("TAGG",utils.isOnline(getContext())+"");
+            if(utils.isOnline(getContext())){
                 try {
                     simpanPendudukOnline(ruta_id);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
                 Toast.makeText(getActivity(),"Data berhasil disimpan secara ONLINE",Toast.LENGTH_LONG).show();
+                bundle.putBoolean("isOnline",true);
             }else {
                 simpanPendudukOffline(ruta_id);
                 Toast.makeText(getActivity(),"Data berhasil disimpan secara OFFLINE",Toast.LENGTH_LONG).show();
+                bundle.putBoolean("isOnline",false);
             }
-            DataFragment dataFragment = new DataFragment();
+
+            dataFragment.setArguments(bundle);
             FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.frameContent,dataFragment);
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }else if(v==btnBatal){
-//            nothing
+            HomeFragment dataFragment = new HomeFragment();
+            FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frameContent,dataFragment);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
         }
     }
     private void addToList(){

@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.print.PageRange;
 import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -17,11 +18,13 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -58,6 +61,7 @@ public class DataFragment extends Fragment {
     int currentItems, totalItems,scrollOutItems;
     ProgressBar progressBar;
     int currentItemPosition = 0;
+    RelativeLayout relativeLayout;
     EditText search;
     String keywords;
     Button btnOK;
@@ -69,22 +73,30 @@ public class DataFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_data, container, false);
         sharedPreferences = getActivity().getSharedPreferences(AUTH_SESSION,Context.MODE_PRIVATE);
         isOnline = this.getArguments().getBoolean("isOnline");
-
+        relativeLayout = (RelativeLayout) view.findViewById(R.id.searchLayout);
+        recyclerView  = (RecyclerView)view.findViewById(R.id.recyclerView);
         if(isOnline){
+            relativeLayout.setVisibility(View.VISIBLE);
+            ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) recyclerView.getLayoutParams();
+            params.setMargins(params.leftMargin,280,params.rightMargin,params.bottomMargin);
+            recyclerView.setLayoutParams(params);
             getActivity().setTitle("Data Penduduk (Online)");
         }else{
+            relativeLayout.setVisibility(View.GONE);
+            ViewGroup.MarginLayoutParams params = (ViewGroup.MarginLayoutParams) recyclerView.getLayoutParams();
+            params.setMargins(params.leftMargin,0,params.rightMargin,params.bottomMargin);
+            recyclerView.setLayoutParams(params);
             getActivity().setTitle("Data Penduduk (Offline)");
         }
         keywords="";
         helper = new DBHelper(getContext());
-        recyclerView  = (RecyclerView)view.findViewById(R.id.recyclerView);
         progressBar = (ProgressBar)view.findViewById(R.id.progress);
         search = (EditText) view.findViewById(R.id.search);
         btnOK  = (Button) view.findViewById(R.id.OK);
         layoutManager = new GridLayoutManager(getActivity().getBaseContext(),2);
         penduduks = new ArrayList<>();
         ARTs = new ArrayList<>();
-        getDataOnline(false);
+        refreshData(false);
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
@@ -250,12 +262,11 @@ public class DataFragment extends Fragment {
                                         );
                                 penduduks.add(newPenduduk);
                             }
-                            Utils utils = new Utils();
-                            utils.status = true;
                             if(isupdate){
                                 adapter.notifyDataSetChanged();
+                                currentItemPosition += 20;
                             }else{
-                                adapter = new RecyclerViewAdapter(penduduks,getActivity().getBaseContext());
+                                adapter = new RecyclerViewAdapter(penduduks,getActivity().getBaseContext(),true);
                                 recyclerView.setAdapter(adapter);
                                 recyclerView.setLayoutManager(layoutManager);
                                 recyclerView.setItemAnimator(new DefaultItemAnimator());
@@ -264,7 +275,6 @@ public class DataFragment extends Fragment {
                                 progressBar.setVisibility(View.GONE);
                             }else{
                                 pd.hide();
-                                currentItemPosition += 20;
                             }
                         } catch (Exception ex) {
                             if(isupdate){
@@ -308,7 +318,7 @@ public class DataFragment extends Fragment {
     }
 
     private void getDataOffline(List<Penduduk> list){
-        adapter = new RecyclerViewAdapter(list,getContext());
+        adapter = new RecyclerViewAdapter(list,getContext(),false);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new GridLayoutManager(getActivity().getBaseContext(),2));
         recyclerView.setItemAnimator(new DefaultItemAnimator());

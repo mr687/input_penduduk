@@ -2,6 +2,7 @@ package com.penduduk.penduduk;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -20,13 +21,19 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import static com.penduduk.penduduk.Utils.AUTH_SESSION;
+
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
+    SharedPreferences sharedPreferences;
     private List<Penduduk> penduduks;
     public Context context;
+    public boolean isOnline;
     Utils utils = new Utils();
-    public RecyclerViewAdapter(List<Penduduk> penduduks,Context context) {
+    public RecyclerViewAdapter(List<Penduduk> penduduks,Context context, boolean isOnline) {
         this.penduduks = penduduks;
         this.context  = context;
+        this.isOnline = isOnline;
+        sharedPreferences = this.context.getSharedPreferences(AUTH_SESSION,Context.MODE_PRIVATE);
     }
 
     @Override
@@ -41,10 +48,17 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         final Penduduk pen = penduduks.get(i);
         holder.txtIDRuta.setText(pen.id_ruta+"");
         holder.txtNama.setText(pen.b1_k8);
+        if(isOnline){
+            holder.btnEdit.setVisibility(View.VISIBLE);
+            holder.btnSend.setVisibility(View.GONE);
+        }else{
+            holder.btnSend.setVisibility(View.VISIBLE);
+            holder.btnEdit.setVisibility(View.GONE);
+        }
         holder.btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(utils.isOnline()){
+                if(utils.isOnline(context)){
                     try {
                         sendPenduduk(context,pen);
                     } catch (JSONException e) {
@@ -166,6 +180,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         }else{
             data.put("artData",0);
         }
+        data.put("uid",sharedPreferences.getString("uid",null));
         utils.postData(EndPoint.ADDPENDUDUK_URL,data,context);
     }
     @Override
@@ -176,7 +191,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         TextView txtIDRuta;
         TextView txtNama;
         Button btnEdit,btnSend;
-        Utils utils = new Utils();
         public MyViewHolder(final View itemView) {
             super(itemView);
 
@@ -184,13 +198,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             txtNama = (TextView) itemView.findViewById(R.id.txtNama);
             btnEdit = (Button) itemView.findViewById(R.id.btnEdit);
             btnSend = (Button) itemView.findViewById(R.id.btnSend);
-            if(!utils.status){
-                btnEdit.setVisibility(View.VISIBLE);
-                btnSend.setVisibility(View.GONE);
-            }else{
-                btnSend.setVisibility(View.VISIBLE);
-                btnEdit.setVisibility(View.GONE);
-            }
         }
     }
 }
