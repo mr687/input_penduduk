@@ -16,9 +16,11 @@ import android.widget.Toast;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
@@ -28,6 +30,7 @@ import static com.penduduk.penduduk.Utils.AUTH_SESSION;
 public class LoginActivity extends Activity {
 
     SharedPreferences sharedPreferences;
+    SharedPreferences.Editor editor;
     EditText txtUsername,txtPassword;
     ProgressDialog pd;
     Button btnLogin;
@@ -38,16 +41,11 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.activity_login);
 
         sharedPreferences = getSharedPreferences(AUTH_SESSION,Context.MODE_PRIVATE);
-        String token= sharedPreferences.getString("token",null);
-        if(token != null){
-            Intent it = new Intent(this, MainActivity.class);
-            it.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            it.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(it);
-        }
 
         pd = new ProgressDialog(this);
         pd.setMessage("Loading...");
+        checkAuth();
+
         txtUsername = (EditText) findViewById(R.id.txtUsername);
         txtPassword = (EditText) findViewById(R.id.txtPassword);
 
@@ -62,6 +60,43 @@ public class LoginActivity extends Activity {
 
         txtUsername.setText("");
         txtPassword.setText("");
+    }
+    private void checkAuth(){
+        pd.show();
+        HashMap<String,String> param = new HashMap<>();
+        param.put("token",sharedPreferences.getString("token",null));
+        param.put("uid",sharedPreferences.getString("uid",null));
+        JsonObjectRequest request =new JsonObjectRequest(EndPoint.CHECKAUTH_URL, new JSONObject(param),
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        String message="";
+                        try {
+                            message = response.getString("message");
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                        pd.hide();
+                        if(message.equals("authorized")){
+                            Intent it = new Intent(LoginActivity.this, MainActivity.class);
+                            it.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            it.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            startActivity(it);
+                        }else{
+                            editor = sharedPreferences.edit();
+                            editor.clear();
+                            editor.commit();
+                        }
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                pd.hide();
+                error.printStackTrace();
+            }
+        });
+        RequestQueue rq = Volley.newRequestQueue(this);
+        rq.add(request);
     }
     public void sendRequest(){
         pd.show();
@@ -90,6 +125,12 @@ public class LoginActivity extends Activity {
                         } catch (Exception ex) {
                             ex.printStackTrace();
                         }
+                        if(role == "2" || role =="1"){
+                            Toast.makeText(getBaseContext(), "Akses hanya diperbolehka untuk petugas lapangan.",
+                                    Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+
                         if (userid != "") {
                             saveToken(userid, token,role,kecamatan,desa);
                             txtUsername.setText("");

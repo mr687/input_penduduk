@@ -110,10 +110,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_weight="2"
-                    android:maxLength="3"
-                    android:inputType="number"
                     android:hint="Kode"
-                    android:text="010" />
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text="" />
             </LinearLayout>
 
             <LinearLayout
@@ -145,10 +145,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_weight="2"
-                    android:maxLength="3"
-                    android:inputType="number"
                     android:hint="Kode"
-                    android:text="001" />
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text="" />
             </LinearLayout>
 
             <LinearLayout
@@ -167,17 +167,18 @@
                     android:id="@+id/b1_k5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginLeft="52dp"/>
+                    android:layout_marginLeft="52dp"
+                    android:layout_weight="1" />
+
                 <EditText
                     android:id="@+id/txtKodeSLS"
-                    android:layout_marginLeft="5dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
                     android:layout_weight="2"
                     android:hint="Kode"
-                    android:maxLength="5"
-                    android:inputType="number"/>
+                    android:inputType="number"
+                    android:maxLength="5" />
             </LinearLayout>
 
             <LinearLayout
@@ -216,9 +217,11 @@
                     android:id="@+id/txtNomorUrutKeluarga"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="number"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:inputType="number" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -255,6 +258,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:inputType="number" />
             </LinearLayout>
 
@@ -275,6 +279,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:inputType="number" />
             </LinearLayout>
 
@@ -345,6 +350,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:inputType="number" />
             </LinearLayout>
 
@@ -474,6 +480,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:text="0"
                     android:inputType="number" />
             </LinearLayout>
 
@@ -935,6 +942,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Sapi"
+                        android:text="0"
                         android:inputType="number" />
                 </android.support.design.widget.TextInputLayout>
 
@@ -948,6 +956,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Kerbau"
+                        android:text="0"
                         android:inputType="number" />
                 </android.support.design.widget.TextInputLayout>
 
@@ -961,6 +970,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Kuda"
+                        android:text="0"
                         android:inputType="number" />
                 </android.support.design.widget.TextInputLayout>
 
@@ -974,6 +984,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Babi"
+                        android:text="0"
                         android:inputType="number" />
                 </android.support.design.widget.TextInputLayout>
 
@@ -986,6 +997,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Kambing/domba"
+                        android:text="0"
                         android:inputType="number" />
                 </android.support.design.widget.TextInputLayout>
             </LinearLayout>
@@ -1072,29 +1084,32 @@
                     android:layout_marginTop="10dp"
                     android:text="Kredit Usaha Rakyat (Ya/Tidak)" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
                 <Button
                     android:id="@+id/btnSimpan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_marginRight="10dp"
-                    android:text="Simpan"
-                    android:textColor="#fff"
-                    android:background="@color/colorAccent"/>
-                <Button
-                    android:textColor="#fff"
-                    android:id="@+id/btnBatal"
-                    android:layout_marginLeft="10dp"
-                    android:text="Batal"
                     android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:text="Simpan"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/btnBatal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#aaa"/>
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="#aaa"
+                    android:text="Batal"
+                    android:textColor="#fff" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

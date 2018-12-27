@@ -112,6 +112,8 @@ public class DataFragment extends Fragment {
         btnOK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                penduduks = new ArrayList<>();
+                ARTs = new ArrayList<>();
                 currentItemPosition = 0;
                 keywords = search.getText().toString();
                 refreshData(false);
@@ -298,7 +300,6 @@ public class DataFragment extends Fragment {
                 params.put("limit",limit);
                 params.put("offset",offset);
                 params.put("keywords",keywords);
-                Log.d("TAGG",params.toString());
                 return params;
             }
         };

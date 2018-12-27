@@ -16,10 +16,6 @@ public class DBHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "PendudukDB";
     private static final String TABLE_NAME = "Penduduk";
     private static final String TABLE_NAME2 = "ART";
-    private static final String KEY_ID = "id";
-    private static final String KEY_NAME = "name";
-    private static final String KEY_ISBOOKMARK = "isBookmark";
-    private static final String[] COLUMNS = { KEY_ID, KEY_NAME, KEY_ISBOOKMARK};
 
     public DBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
