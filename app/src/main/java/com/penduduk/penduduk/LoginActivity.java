@@ -125,9 +125,11 @@ public class LoginActivity extends Activity {
                         } catch (Exception ex) {
                             ex.printStackTrace();
                         }
-                        if(role == "2" || role =="1"){
+                        if(role.equals("2") || role.equals("1")){
                             Toast.makeText(getBaseContext(), "Akses hanya diperbolehka untuk petugas lapangan.",
                                     Toast.LENGTH_SHORT).show();
+                            txtUsername.setText("");
+                            txtPassword.setText("");
                             return;
                         }
 

@@ -32,7 +32,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="Provinsi" />
+                    android:text="1. Provinsi" />
 
                 <EditText
                     android:id="@+id/b1_k1a"
@@ -62,7 +62,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="Kabupaten/Kota*)" />
+                    android:text="2. Kabupaten/Kota*)" />
 
                 <EditText
                     android:id="@+id/b1_k2a"
@@ -92,7 +92,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="Kecamatan" />
+                    android:text="3. Kecamatan" />
 
                 <EditText
                     android:id="@+id/b1_k3a"
@@ -127,7 +127,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="2"
-                    android:text="Desa/Kelurahan/Nagari*)" />
+                    android:text="4. Desa/Kelurahan/Nagari*)" />
 
                 <EditText
                     android:id="@+id/b1_k4a"
@@ -161,7 +161,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="Nama SLS" />
+                    android:text="5. Nama SLS" />
 
                 <EditText
                     android:id="@+id/b1_k5"
@@ -191,7 +191,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="Alamat" />
+                    android:text="6. Alamat" />
 
                 <EditText
                     android:id="@+id/b1_k6"
@@ -211,7 +211,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="Nomor urut rumah tangga (dari prelist)" />
+                    android:text="7. Nomor urut rumah tangga (dari prelist)" />
 
                 <EditText
                     android:id="@+id/txtNomorUrutKeluarga"
@@ -232,7 +232,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="Nama KRT" />
+                    android:text="8. Nama KRT" />
 
                 <EditText
                     android:id="@+id/b1_k8"
@@ -251,7 +251,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="Jumlah ART" />
+                    android:text="9. Jumlah ART" />
 
                 <EditText
                     android:id="@+id/b1_k9"
@@ -272,7 +272,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="Jumlah Keluarga" />
+                    android:text="10. Jumlah Keluarga" />
 
                 <EditText
                     android:id="@+id/b1_k10"
@@ -302,7 +302,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:text="Status penguasaan bangunan tempat tinggal yang ditempati:" />
+                    android:text="1a. Status penguasaan bangunan tempat tinggal yang ditempati:" />
 
                 <Spinner
                     android:id="@+id/b3_k1a"
@@ -323,7 +323,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:text="Status lahan tempat tinggal yang ditempati:" />
+                    android:text="1b. Status lahan tempat tinggal yang ditempati:" />
 
                 <Spinner
                     android:id="@+id/b3_k1b"
@@ -343,7 +343,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="Luas lantai (m2)" />
+                    android:text="2. Luas lantai (m2)" />
 
                 <EditText
                     android:id="@+id/b3_k2"
@@ -365,7 +365,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:text="Jenis lantai terluas:" />
+                    android:text="3. Jenis lantai terluas:" />
 
                 <Spinner
                     android:id="@+id/b3_k3"
@@ -386,7 +386,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:text="Jenis dinding terluas:" />
+                    android:text="4a. Jenis dinding terluas:" />
 
                 <Spinner
                     android:id="@+id/b3_k4a"
@@ -409,7 +409,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:text="Kondisi Dinding:" />
+                    android:text="4b. Kondisi Dinding:" />
 
                 <Spinner
                     android:id="@+id/b3_k4b"
@@ -430,7 +430,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:text="Jenis atap terluas:" />
+                    android:text="5a. Jenis atap terluas:" />
 
                 <Spinner
                     android:id="@+id/b3_k5a"
@@ -453,7 +453,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:text="Kondisi Dinding:" />
+                    android:text="5b. Kondisi Dinding:" />
 
                 <Spinner
                     android:id="@+id/b3_k5b"
@@ -473,7 +473,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="Jumlah kamar tidur" />
+                    android:text="6. Jumlah kamar tidur" />
 
                 <EditText
                     android:id="@+id/b3_k6"
@@ -495,7 +495,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:text="Sumber air minum:" />
+                    android:text="7. Sumber air minum:" />
 
                 <Spinner
                     android:id="@+id/b3_k7"
@@ -516,7 +516,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:text="Cara memperoleh air minum:" />
+                    android:text="8. Cara memperoleh air minum:" />
 
                 <Spinner
                     android:id="@+id/b3_k8"
@@ -558,7 +558,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:text="Sumber penerangan utama:" />
+                    android:text="9a. Sumber penerangan utama:" />
 
                 <Spinner
                     android:id="@+id/b3_k9a"
@@ -581,7 +581,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:text="Daya terpasang:" />
+                    android:text="9b. Daya terpasang:" />
 
                 <Spinner
                     android:id="@+id/b3_k9b"
@@ -623,7 +623,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:text="Bahan bakar/energi utama untuk memasak:" />
+                    android:text="10. Bahan bakar/energi utama untuk memasak:" />
 
                 <Spinner
                     android:id="@+id/b3_k10"
@@ -665,7 +665,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:text="Penggunaan fasilitas tempat buang air besar:" />
+                    android:text="11a. Penggunaan fasilitas tempat buang air besar:" />
 
                 <Spinner
                     android:id="@+id/b3_k11a"
@@ -686,7 +686,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:text="Jenis kloset:" />
+                    android:text="11b. Jenis kloset:" />
 
                 <Spinner
                     android:id="@+id/b3_k11b"
@@ -707,7 +707,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:text="Tempat pembuangan akhir tinja:" />
+                    android:text="12. Tempat pembuangan akhir tinja:" />
 
                 <Spinner
                     android:id="@+id/b3_k12"
@@ -757,7 +757,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Rumah tangga memiliki sendiri aset bergerak, sebagai berikut:" />
+                android:text="1. Rumah tangga memiliki sendiri aset bergerak, sebagai berikut:" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -770,112 +770,112 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Tabung gas 5,5kg atau lebih (Ya/Tidak)" />
+                    android:text="a. Tabung gas 5,5kg atau lebih (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkKulkas"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Lemari es/kulkas (Ya/Tidak)" />
+                    android:text="b. Lemari es/kulkas (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkAC"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="AC (Ya/Tidak)" />
+                    android:text="c. AC (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkPemanasAir"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Pemanas air (water heater) (Ya/Tidak)" />
+                    android:text="d. Pemanas air (water heater) (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkTeleponRumah"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="TeleponRumah (PSTN) (Ya/Tidak)" />
+                    android:text="e. TeleponRumah (PSTN) (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkTelevisi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Televisi (Ya/Tidak)" />
+                    android:text="f. Televisi (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkPerhiasan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Emas/perhiasan &amp; tabungan (senilai 10 gram emas) (Ya/Tidak)" />
+                    android:text="g. Emas/perhiasan &amp; tabungan (senilai 10 gram emas) (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkKomputer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Komputer/Laptop (Ya/Tidak)" />
+                    android:text="h. Komputer/Laptop (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkSepeda"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Sepeda (Ya/Tidak)" />
+                    android:text="i. Sepeda (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkSepedaMotor"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Sepeda Motor (Ya/Tidak)" />
+                    android:text="j. Sepeda Motor (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkMobil"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Mobil (Ya/Tidak)" />
+                    android:text="k. Mobil (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkPerahu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Perahu (Ya/Tidak)" />
+                    android:text="l. Perahu (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkMotorTempel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Montor tempel (Ya/Tidak)" />
+                    android:text="m. Montor tempel (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkPerahuMotor"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Perahu motor (Ya/Tidak)" />
+                    android:text="n. Perahu motor (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkKapal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Kapal (Ya/Tidak)" />
+                    android:text="o. Kapal (Ya/Tidak)" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Rumah tangga memiliki aset tidak bergerak sebagai berikut:" />
+                android:text="2. Rumah tangga memiliki aset tidak bergerak sebagai berikut:" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -894,7 +894,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:text="Lahan (Ya/Tidak)" />
+                        android:text="a. Lahan (Ya/Tidak)" />
 
                     <android.support.design.widget.TextInputLayout
                         android:id="@+id/layoutLahan"
@@ -917,14 +917,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Rumah di tempat lain (Ya/Tidak)" />
+                    android:text="b. Rumah di tempat lain (Ya/Tidak)" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Jumlah ternak yang dimiliki (ekor):" />
+                android:text="3. Jumlah ternak yang dimiliki (ekor):" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -941,7 +941,7 @@
                         android:id="@+id/txtSapi"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Sapi"
+                        android:hint="a. Sapi"
                         android:text="0"
                         android:inputType="number" />
                 </android.support.design.widget.TextInputLayout>
@@ -955,7 +955,7 @@
                         android:id="@+id/txtKerbau"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Kerbau"
+                        android:hint="b. Kerbau"
                         android:text="0"
                         android:inputType="number" />
                 </android.support.design.widget.TextInputLayout>
@@ -969,7 +969,7 @@
                         android:id="@+id/txtKuda"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Kuda"
+                        android:hint="c. Kuda"
                         android:text="0"
                         android:inputType="number" />
                 </android.support.design.widget.TextInputLayout>
@@ -983,7 +983,7 @@
                         android:id="@+id/txtBabi"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Babi"
+                        android:hint="d. Babi"
                         android:text="0"
                         android:inputType="number" />
                 </android.support.design.widget.TextInputLayout>
@@ -996,7 +996,7 @@
                         android:id="@+id/txtKambingDomba"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Kambing/domba"
+                        android:hint="e. Kambing/domba"
                         android:text="0"
                         android:inputType="number" />
                 </android.support.design.widget.TextInputLayout>
@@ -1007,13 +1007,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Apakah ada ART yang memiliki usaha sendiri/bersama? (Ya/Tidak)" />
+                android:text="4. Apakah ada ART yang memiliki usaha sendiri/bersama? (Ya/Tidak)" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Rumah tangga menjadi peserta program/memiliki kartu program berikut:" />
+                android:text="5. Rumah tangga menjadi peserta program/memiliki kartu program berikut:" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -1026,63 +1026,63 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Kartu Keluarga Sejahtera (KKS)/Kartu Perlindungan Sosial (KPS) (Ya/Tidak)" />
+                    android:text="a. Kartu Keluarga Sejahtera (KKS)/Kartu Perlindungan Sosial (KPS) (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkKIP"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Kartu Indonesia Pintar (KIP)/Bantuan Siswa Miskin(BSM) (Ya/Tidak)" />
+                    android:text="b. Kartu Indonesia Pintar (KIP)/Bantuan Siswa Miskin(BSM) (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkKISBPJS"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Kartu Indonesia Sehat (KIS)/BPJS Kesehatan/Jamkesmas (Ya/Tidak)" />
+                    android:text="c. Kartu Indonesia Sehat (KIS)/BPJS Kesehatan/Jamkesmas (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkBPSMandiri"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="BPJS Kesehatan peserta manidiri (Ya/Tidak)" />
+                    android:text="d. BPJS Kesehatan peserta manidiri (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkJamsostek"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Jaminan sosial tenaga kerja (Jamsostek)/BPJS Ketenagakerjaan  (Ya/Tidak)" />
+                    android:text="e. Jaminan sosial tenaga kerja (Jamsostek)/BPJS Ketenagakerjaan  (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkAsuransiLainnya"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Asuransi kesehatan lainnya (Ya/Tidak)" />
+                    android:text="f. Asuransi kesehatan lainnya (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkPKH"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Program Keluarga Harapan (PKH) (Ya/Tidak)" />
+                    android:text="g. Program Keluarga Harapan (PKH) (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkRaskin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Beras untuk orang miskin (Raskin) (Ya/Tidak)" />
+                    android:text="h. Beras untuk orang miskin (Raskin) (Ya/Tidak)" />
 
                 <CheckBox
                     android:id="@+id/checkKUR"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Kredit Usaha Rakyat (Ya/Tidak)" />
+                    android:text="i. Kredit Usaha Rakyat (Ya/Tidak)" />
             </LinearLayout>
 
             <LinearLayout
